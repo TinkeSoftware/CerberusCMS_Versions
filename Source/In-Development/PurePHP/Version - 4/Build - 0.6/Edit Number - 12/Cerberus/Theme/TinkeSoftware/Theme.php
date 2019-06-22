@@ -145,7 +145,7 @@ $_THIS_THEMES_MODULES_2			= "
 */
 
 $_GLOBAL_META_TAGS			= "
-		<Link REL=\"shortcut icon\" HREF=\"Theme/$_THEME_DIRECTORY/$_THEME_DIRECTORY_IMAGE/Icon/favicon.ico\" TYPE=\"image/x-icon\">
+		<Link REL=\"shortcut icon\" HREF=\"Theme/$_THEME_DIRECTORY/$_THEME_DIRECTORY_IMAGE/Icon/FavIcon.ico\" TYPE=\"image/x-icon\">
 		<META NAME=\"COPYRIGHT\" CONTENT=\"(C) Tinke Software\">
 		<META NAME=\"KEYWORDS\" CONTENT=\"Tinke Software, Content, Management, System, Cerberus, PHP, MySQL, SQL\">
 		<META NAME=\"DESCRIPTION\" CONTENT=\"Cerberus Content Management System Version: 4, Build: 0.6\">
