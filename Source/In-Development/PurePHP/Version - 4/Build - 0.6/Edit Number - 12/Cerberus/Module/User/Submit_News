@@ -79,7 +79,7 @@ echo ("
 
 } else {
 
-$_Module_Submit_News_DB_Query_INSERT_SUBMISSIONS	= $DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_submissions(submission_author,submission_data,submission_time)VALUES('$_GLOBAL_USERNAME','$_Module_Submit_News_POST_NEWS_MESSAGE','$_GLOBAL_DATE')");
+$_Module_Submit_News_DB_Query_INSERT_SUBMISSIONS		= $DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_submissions(submission_author,submission_data,submission_time)VALUES('$_GLOBAL_USERNAME','$_Module_Submit_News_POST_NEWS_MESSAGE','$_GLOBAL_DATE')");
 
 if ($_Module_Submit_News_DB_Query_INSERT_SUBMISSIONS) {
 

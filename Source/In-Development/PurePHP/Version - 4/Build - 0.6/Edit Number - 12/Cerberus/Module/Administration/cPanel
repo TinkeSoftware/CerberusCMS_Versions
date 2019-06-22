@@ -88,7 +88,7 @@ echo ("
 												&nbsp;
 											<A HREF=\"?$_INTERNAL_ADMINISTRATOR_MODULE&#61;cPanel&amp;Action&#61;Web_Pages\" TITLE=\":: Manage Links & Custom Pages ::\"><IMG SRC=\"Theme/$_GLOBAL_THEME_DIRECTORY/Image/Icon_Administration/Icon_Web_Pages.$_GLOBAL_IMAGE_EXTENSION\" WIDTH=\"60\" HEIGHT=\"60\" BORDER=\"1\" ALT=\":: Manage Links & Custom Web Pages ::\"></A>
 												&nbsp;
-											<A HREF=\"?Application&#61;Logout\" TITLE=\":: Logout & Secure-Delete Credentials ::\"><IMG SRC=\"Theme/$_GLOBAL_THEME_DIRECTORY/Image/Icon_Administration/Icon_Logout.$_GLOBAL_IMAGE_EXTENSION\" WIDTH=\"60\" HEIGHT=\"60\" BORDER=\"1\" ALT=\":: Logout & Secure-Delete Credentials ::\"></A>
+											<A HREF=\"?InternalApplication&#61;Logout\" TITLE=\":: Logout & Secure-Delete Credentials ::\"><IMG SRC=\"Theme/$_GLOBAL_THEME_DIRECTORY/Image/Icon_Administration/Icon_Logout.$_GLOBAL_IMAGE_EXTENSION\" WIDTH=\"60\" HEIGHT=\"60\" BORDER=\"1\" ALT=\":: Logout & Secure-Delete Credentials ::\"></A>
 										</CENTER>
 
 										<HR>

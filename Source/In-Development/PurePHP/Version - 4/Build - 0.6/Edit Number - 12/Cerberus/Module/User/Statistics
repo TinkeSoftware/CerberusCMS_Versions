@@ -61,10 +61,10 @@
 */
 
 $_Module_Statistics_DB_Query_SELECT_STATISTICS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_statistics ORDER BY id ASC LIMIT 1");
-$_Module_Statistics_DB_Query_SELECT_MEMBERS					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members");
+$_Module_Statistics_DB_Query_SELECT_MEMBERS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members");
 $_Module_Statistics_DB_Query_SELECT_COMMENTS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_comments");
-$_Module_Statistics_DB_Query_SELECT_FILES					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_files");
-$_Module_Statistics_DB_Query_SELECT_FORUM					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_forum_forum");
+$_Module_Statistics_DB_Query_SELECT_FILES				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_files");
+$_Module_Statistics_DB_Query_SELECT_FORUM				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_forum_forum");
 $_Module_Statistics_DB_Query_SELECT_FORUM_TOPICS			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_forum_topic");
 $_Module_Statistics_DB_Query_SELECT_FORUM_POSTS				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_forum_post");
 
@@ -74,11 +74,11 @@ $_Module_Statistics_DB_Query_SELECT_FORUM_POSTS				= $DB->query("SELECT * FROM {
  ===========================
 */
 
-$_Module_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_POSTS		= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_FORUM_POSTS);
-$_Module_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPICS	= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_FORUM_TOPICS);
+$_Module_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_POSTS			= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_FORUM_POSTS);
+$_Module_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM_TOPICS		= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_FORUM_TOPICS);
 $_Module_Statistics_DB_Query_NUMBER_OF_ROWS_FORUM			= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_FORUM);
 $_Module_Statistics_DB_Query_NUMBER_OF_ROWS_FILES			= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_FILES);
-$_Module_Statistics_DB_Query_NUMBER_OF_ROWS_COMMENTS		= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_COMMENTS);
+$_Module_Statistics_DB_Query_NUMBER_OF_ROWS_COMMENTS			= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_COMMENTS);
 $_Module_Statistics_DB_Query_NUMBER_OF_ROWS_MEMBERS			= $DB->num_rows($_Module_Statistics_DB_Query_SELECT_MEMBERS);
 
 /*

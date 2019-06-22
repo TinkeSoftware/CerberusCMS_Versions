@@ -50,10 +50,10 @@
 
 $_Module_Search_POST_KEYWORD					= $_POST['post_search_keyword'];
 $_Module_Search_POST_SECTION					= $_POST['post_search_section'];
-$_Module_Search_POST_KEYWORD_REPLACE[0]			= "'";
-$_Module_Search_POST_KEYWORD_REPLACE[1]			= "\"";
-$_Module_Search_POST_KEYWORD_REPLACE_WITH[0]	= "&#39;";
-$_Module_Search_POST_KEYWORD_REPLACE_WITH[0]	= "&quot;";
+$_Module_Search_POST_KEYWORD_REPLACE[0]				= "'";
+$_Module_Search_POST_KEYWORD_REPLACE[1]				= "\"";
+$_Module_Search_POST_KEYWORD_REPLACE_WITH[0]			= "&#39;";
+$_Module_Search_POST_KEYWORD_REPLACE_WITH[0]			= "&quot;";
 $_Module_Search_POST_KEYWORD					= str_replace($_Module_Search_POST_KEYWORD_REPLACE, $_Module_Search_POST_KEYWORD_REPLACE_WITH, $_Module_Search_POST_KEYWORD);
 
 if ((!$_Module_Search_POST_KEYWORD) || (!$_Module_Search_POST_SECTION)) {
@@ -87,7 +87,7 @@ echo ("
 
 if ($_Module_Search_POST_SECTION == 1) {
 
-$_Module_Search_DB_Query_SEARCH_ARTICLES		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_articles WHERE article_data LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
+$_Module_Search_DB_Query_SEARCH_ARTICLES			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_articles WHERE article_data LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
 
 if ($DB->num_rows($_Module_Search_DB_Query_SEARCH_ARTICLES) <= 0) {
 
@@ -100,7 +100,7 @@ while ($_Module_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array = $DB->fetch_array($
 $_Module_Search_LIST_ARTICLE_ID 				= $_Module_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['id'];
 $_Module_Search_LIST_ARTICLE_DATA 				= $_Module_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['article_data'];
 $_Module_Search_LIST_ARTICLE_TITLE 				= $_Module_Search_DB_Query_SEARCH_ARTICLES_Fetch_Array['article_title'];
-$_Module_Search_LIST_ARTICLE_DATA_REDUCED 		= substr($_Module_Search_LIST_ARTICLE_DATA, 0, 30);
+$_Module_Search_LIST_ARTICLE_DATA_REDUCED 			= substr($_Module_Search_LIST_ARTICLE_DATA, 0, 30);
 
 echo ("
 										<CENTER>
@@ -136,7 +136,7 @@ $DB->free($_Module_Search_DB_Query_SEARCH_ARTICLES);
 
 if ($_Module_Search_POST_SECTION == 2) {
 
-$_Module_Search_DB_Query_SEARCH_FILES			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_files WHERE file_description LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
+$_Module_Search_DB_Query_SEARCH_FILES				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_files WHERE file_description LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
 
 if ($DB->num_rows($_Module_Search_DB_Query_SEARCH_FILES) <= 0) {
 
@@ -149,7 +149,7 @@ while ($_Module_Search_DB_Query_SEARCH_FILES_Fetch_Array = $DB->fetch_array($_Mo
 $_Module_Search_LIST_FILE_ID					= $_Module_Search_DB_Query_SEARCH_FILES_Fetch_Array['id'];
 $_Module_Search_LIST_FILE_DATA					= $_Module_Search_DB_Query_SEARCH_FILES_Fetch_Array['file_description'];
 $_Module_Search_LIST_FILE_TITLE					= $_Module_Search_DB_Query_SEARCH_FILES_Fetch_Array['file_title'];
-$_Module_Search_LIST_FILE_DATA_REDUCED			= substr($_Module_Search_LIST_FILE_DATA, 0, 30);
+$_Module_Search_LIST_FILE_DATA_REDUCED				= substr($_Module_Search_LIST_FILE_DATA, 0, 30);
 
 echo ("
 										<CENTER>
@@ -185,7 +185,7 @@ $DB->free($_Module_Search_DB_Query_SEARCH_FILES);
 
 if ($_Module_Search_POST_SECTION == 3) {
 
-$_Module_Search_DB_Query_SEARCH_FORUM 			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_forum_post WHERE post_data LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
+$_Module_Search_DB_Query_SEARCH_FORUM 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_forum_post WHERE post_data LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
 
 if ($DB->num_rows($_Module_Search_DB_Query_SEARCH_FORUM) <= 0) {
 
@@ -198,7 +198,7 @@ while ($_Module_Search_DB_Query_SEARCH_FORUM_Fetch_Array = $DB->fetch_array($_Mo
 $_Module_Search_LIST_FORUM_ID					= $_Module_Search_DB_Query_SEARCH_FORUM_Fetch_Array['post_topic_id'];
 $_Module_Search_LIST_FORUM_AUTHOR				= $_Module_Search_DB_Query_SEARCH_FORUM_Fetch_Array['post_author'];
 $_Module_Search_LIST_FORUM_DATA					= $_Module_Search_DB_Query_SEARCH_FORUM_Fetch_Array['post_data'];
-$_Module_Search_LIST_FORUM_DATA_REDUCED			= substr($_Module_Search_LIST_FORUM_DATA, 0, 30);
+$_Module_Search_LIST_FORUM_DATA_REDUCED				= substr($_Module_Search_LIST_FORUM_DATA, 0, 30);
 
 echo ("
 										<CENTER>
@@ -234,7 +234,7 @@ $DB->free($_Module_Search_DB_Query_SEARCH_FORUM);
 
 if ($_Module_Search_POST_SECTION == 4) {
 
-$_Module_Search_DB_Query_SEARCH_MEMBERS 		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_username LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
+$_Module_Search_DB_Query_SEARCH_MEMBERS 			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_username LIKE '%$_Module_Search_POST_KEYWORD%' ORDER BY id ASC");
 
 if ($DB->num_rows($_Module_Search_DB_Query_SEARCH_MEMBERS) <= 0) {
 
@@ -244,7 +244,7 @@ if ($DB->num_rows($_Module_Search_DB_Query_SEARCH_MEMBERS) <= 0) {
 
 while ($_Module_Search_DB_Query_SEARCH_MEMBERS_Fetch_Array = $DB->fetch_array($_Module_Search_DB_Query_SEARCH_MEMBERS)) {
 
-$_Module_Search_LIST_MEMBER_USERNAME			= $_Module_Search_DB_Query_SEARCH_MEMBERS_Fetch_Array['member_username'];
+$_Module_Search_LIST_MEMBER_USERNAME				= $_Module_Search_DB_Query_SEARCH_MEMBERS_Fetch_Array['member_username'];
 
 echo ("
 										<CENTER>
@@ -290,9 +290,9 @@ if ($DB->num_rows($_Module_Search_DB_Query_SEARCH_NEWS) <= 0) {
 
 while ($_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array = $DB->fetch_array($_Module_Search_DB_Query_SEARCH_NEWS)) {
 
-$_Module_Search_LIST_NEWS_ID						= $_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array['id'];
-$_Module_Search_LIST_NEWS_DATA						= $_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_data'];
-$_Module_Search_LIST_NEWS_TITLE						= $_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_title'];
+$_Module_Search_LIST_NEWS_ID					= $_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array['id'];
+$_Module_Search_LIST_NEWS_DATA					= $_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_data'];
+$_Module_Search_LIST_NEWS_TITLE					= $_Module_Search_DB_Query_SEARCH_NEWS_Fetch_Array['news_title'];
 $_Module_Search_LIST_NEWS_DATA_REDUCED				= substr($_Module_Search_LIST_NEWS_DATA, 0, 30);
 
 echo ("

@@ -50,14 +50,13 @@
 
 /*
  ===========================
- + If Valid Credentials Exist
+ + If Valid Credentials Exist, Print Deny Registration Message
  ===========================
 */
 
 if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
-
 											echo ($_Message_Register_REGISTRATION_DENIED);
-} else {
+} else { // [ + ] [ 1 ] IF USERNAME && PASSWORD DO NOT EXIST IN COOKIES, DISPLAY REGISTRATION FORM
 
 /*
  ===========================
@@ -84,10 +83,10 @@ $_Module_Register_RANDOM_KEY_MD5 				= md5($_Module_Register_RANDOM_KEY);
 
 $_Module_Register_POST_FIRST_NAME				= $_POST['post_first_name'];
 $_Module_Register_POST_LAST_NAME				= $_POST['post_last_name'];
-$_Module_Register_POST_EMAIL_ADDRESS			= $_POST['post_email_address'];
+$_Module_Register_POST_EMAIL_ADDRESS				= $_POST['post_email_address'];
 $_Module_Register_POST_MEMBER_ID				= $_POST['post_member_id'];
 $_Module_Register_POST_RANDOM_KEY				= $_POST['post_random_key'];
-$_Module_Register_POST_RANDOM_KEY_CHECK			= $_POST['post_random_key_check'];
+$_Module_Register_POST_RANDOM_KEY_CHECK				= $_POST['post_random_key_check'];
 
 /*
  ===========================
@@ -103,15 +102,15 @@ $_Module_Register_POST_LAST_NAME				= preg_replace("/'/","&#39;", $_Module_Regis
 $_Module_Register_POST_LAST_NAME				= preg_replace("/</","&lt;", $_Module_Register_POST_LAST_NAME);
 $_Module_Register_POST_LAST_NAME				= stripslashes($_Module_Register_POST_LAST_NAME);
 
-$_Module_Register_POST_EMAIL_ADDRESS			= preg_replace("/'/","&#39;", $_Module_Register_POST_EMAIL_ADDRESS);
-$_Module_Register_POST_EMAIL_ADDRESS			= preg_replace("/</","&lt;", $_Module_Register_POST_EMAIL_ADDRESS);
-$_Module_Register_POST_EMAIL_ADDRESS			= stripslashes($_Module_Register_POST_EMAIL_ADDRESS);
+$_Module_Register_POST_EMAIL_ADDRESS				= preg_replace("/'/","&#39;", $_Module_Register_POST_EMAIL_ADDRESS);
+$_Module_Register_POST_EMAIL_ADDRESS				= preg_replace("/</","&lt;", $_Module_Register_POST_EMAIL_ADDRESS);
+$_Module_Register_POST_EMAIL_ADDRESS				= stripslashes($_Module_Register_POST_EMAIL_ADDRESS);
 
 $_Module_Register_POST_MEMBER_ID				= preg_replace("/'/","&#39;", $_Module_Register_POST_MEMBER_ID);
 $_Module_Register_POST_MEMBER_ID				= preg_replace("/</","&lt;", $_Module_Register_POST_MEMBER_ID);
 $_Module_Register_POST_MEMBER_ID				= str_replace(".", "[dot]", $_Module_Register_POST_MEMBER_ID);
 $_Module_Register_POST_MEMBER_ID				= stripslashes($_Module_Register_POST_MEMBER_ID);
-$_Module_Register_GET_STRING_LENGTH_MEMBER_ID	= strlen($_Module_Register_POST_MEMBER_ID);
+$_Module_Register_GET_STRING_LENGTH_MEMBER_ID			= strlen($_Module_Register_POST_MEMBER_ID);
 
 /*
  ===========================
@@ -162,13 +161,19 @@ echo ("
 											<CENTER>By clicking `Register` you agree to this site's <A HREF=\"TOS-PP.txt\" TITLE=\"View :: Terms of Service &amp; Privacy Policy\">Terms of Service and Privacy Policy.</A></CENTER>
 ");
 
-} else {
+} else { // [ + ] [ 2 ] FORM DATA HAS POSTED, CHECK RANDOM KEY
+
+/*
+ ===========================
+ + Compare Random Key
+ ===========================
+*/
 
 if ($_Module_Register_POST_RANDOM_KEY != $_Module_Register_POST_RANDOM_KEY_CHECK) {
 
 											echo ($_Message_Register_REGISTRATION_KEY_ERROR);
 
-} else {
+} else { // [ + ] [ 3 ] RANDOM KEY IS THE SAME, STRIP CHARACTERS FROM POST DATA
 
 /*
  ===========================
@@ -176,32 +181,32 @@ if ($_Module_Register_POST_RANDOM_KEY != $_Module_Register_POST_RANDOM_KEY_CHECK
  ===========================
 */
 
-$_Module_Register_POST_STRIP_CHARACTERS[0]		= "!";
-$_Module_Register_POST_STRIP_CHARACTERS[1]		= "@";
-$_Module_Register_POST_STRIP_CHARACTERS[2]		= "#";
-$_Module_Register_POST_STRIP_CHARACTERS[3]		= "$";
-$_Module_Register_POST_STRIP_CHARACTERS[4]		= "%";
-$_Module_Register_POST_STRIP_CHARACTERS[5]		= "^";
-$_Module_Register_POST_STRIP_CHARACTERS[6]		= "&";
-$_Module_Register_POST_STRIP_CHARACTERS[7]		= "*";
-$_Module_Register_POST_STRIP_CHARACTERS[8]		= "(";
-$_Module_Register_POST_STRIP_CHARACTERS[9]		= ")";
-$_Module_Register_POST_STRIP_CHARACTERS[10]		= "=";
-$_Module_Register_POST_STRIP_CHARACTERS[11]		= "{";
-$_Module_Register_POST_STRIP_CHARACTERS[12]		= "}";
-$_Module_Register_POST_STRIP_CHARACTERS[13]		= "[";
-$_Module_Register_POST_STRIP_CHARACTERS[14]		= "]";
-$_Module_Register_POST_STRIP_CHARACTERS[15]		= "|";
-$_Module_Register_POST_STRIP_CHARACTERS[16]		= "?";
-$_Module_Register_POST_STRIP_CHARACTERS[17]		= "<";
-$_Module_Register_POST_STRIP_CHARACTERS[18]		= ">";
-$_Module_Register_POST_STRIP_CHARACTERS[19]		= "'";
-$_Module_Register_POST_STRIP_CHARACTERS[20]		= "\"";
-$_Module_Register_POST_STRIP_CHARACTERS[21]		= "/";
-$_Module_Register_POST_STRIP_CHARACTERS[22]		= ".";
-$_Module_Register_POST_STRIP_CHARACTERS[23]		= ",";
-$_Module_Register_POST_STRIP_CHARACTERS[24]		= "+";
-$_Module_Register_POST_STRIP_CHARACTERS[25]		= " ";
+$_Module_Register_POST_STRIP_CHARACTERS[0]			= "!";
+$_Module_Register_POST_STRIP_CHARACTERS[1]			= "@";
+$_Module_Register_POST_STRIP_CHARACTERS[2]			= "#";
+$_Module_Register_POST_STRIP_CHARACTERS[3]			= "$";
+$_Module_Register_POST_STRIP_CHARACTERS[4]			= "%";
+$_Module_Register_POST_STRIP_CHARACTERS[5]			= "^";
+$_Module_Register_POST_STRIP_CHARACTERS[6]			= "&";
+$_Module_Register_POST_STRIP_CHARACTERS[7]			= "*";
+$_Module_Register_POST_STRIP_CHARACTERS[8]			= "(";
+$_Module_Register_POST_STRIP_CHARACTERS[9]			= ")";
+$_Module_Register_POST_STRIP_CHARACTERS[10]			= "=";
+$_Module_Register_POST_STRIP_CHARACTERS[11]			= "{";
+$_Module_Register_POST_STRIP_CHARACTERS[12]			= "}";
+$_Module_Register_POST_STRIP_CHARACTERS[13]			= "[";
+$_Module_Register_POST_STRIP_CHARACTERS[14]			= "]";
+$_Module_Register_POST_STRIP_CHARACTERS[15]			= "|";
+$_Module_Register_POST_STRIP_CHARACTERS[16]			= "?";
+$_Module_Register_POST_STRIP_CHARACTERS[17]			= "<";
+$_Module_Register_POST_STRIP_CHARACTERS[18]			= ">";
+$_Module_Register_POST_STRIP_CHARACTERS[19]			= "'";
+$_Module_Register_POST_STRIP_CHARACTERS[20]			= "\"";
+$_Module_Register_POST_STRIP_CHARACTERS[21]			= "/";
+$_Module_Register_POST_STRIP_CHARACTERS[22]			= ".";
+$_Module_Register_POST_STRIP_CHARACTERS[23]			= ",";
+$_Module_Register_POST_STRIP_CHARACTERS[24]			= "+";
+$_Module_Register_POST_STRIP_CHARACTERS[25]			= " ";
 
 /*
  ===========================
@@ -213,7 +218,7 @@ if (substr_count($_Module_Register_POST_EMAIL_ADDRESS,"@") != 1) {
 
 											echo ($_Message_Register_REGISTRATION_INVALID_EMAIL);
 
-} else {
+} else { // [ + ] [ 4 ] EMAIL ADDRESS IS VALID, CHECK FOR DISALLOWED CHARACTERS
 
 /*
  ===========================
@@ -225,7 +230,7 @@ if (substr_count($_Module_Register_POST_MEMBER_ID, $_Module_Register_POST_STRIP_
 
 											echo ($_Message_Register_REGISTRATION_MEMBER_NAME_ERROR);
 
-} else {
+} else { // [ + ] [ 5 ] CHARACTERS ARE VALID, CHECK FOR USERNAME LENGTH
 
 /*
  ===========================
@@ -237,15 +242,15 @@ if ($_Module_Register_GET_STRING_LENGTH_MEMBER_ID < 4) {
 
 											echo ($_Message_Register_REGISTRATION_MEMBER_NAME_LENGTH_ERROR);
 
-} else {
+} else { // [ + ] [ 6 ] USERNAME IS GREATER THAN 4 CHARACTERS, CHECK FOR EXISTING USER
 
 /*
  ===========================
- + Check For Existing User
+ + Check For Existing User In Member Rows
  ===========================
 */
 
-$_Module_Register_DB_Query_REGISTRATION_CHECK	= $DB->query("SELECT FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_email_address='$_Module_Register_POST_EMAIL_ADDRESS' AND member_username='$_Module_Register_POST_MEMBER_ID'");
+$_Module_Register_DB_Query_REGISTRATION_CHECK			= $DB->query("SELECT FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_email_address='$_Module_Register_POST_EMAIL_ADDRESS'");
 
 /*
  ===========================
@@ -292,13 +297,27 @@ Any problems should be reported to Administration.
 Have a nice day,
 		~ $_GLOBAL_SITE_TITLE
 
-[ IP: $REMOTE_ADDR ]")) {
+[ IP: $_GLOBAL_REMOTE_ADDRESS ]")) {
 											//echo ("Cerberus: mail() function working...");
-} else {
+} else { // [ + ] [ 7 ] IF EMAIL HAS BEEN SENT
 											echo ($_Message_Register_REGISTRATION_EMAIL_FUNCTION_ERROR);
 } // [ + ] MAIL_FUNCTION
 
-$_Module_Register_DB_Query_INSERT_REGISTRAR		= $DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_members(member_access_level,member_avatar,member_banned_status,member_city,member_experience_amount,member_first_name,member_join_date,member_last_name,member_email_address,member_username,member_newsletter,member_password,member_number_of_posts,member_signature,member_sound,member_t_logged,member_t_random)VALUES('1','Default.$_GLOBAL_IMAGE_EXTENSION','0','Unknown','0','$_Module_Register_POST_FIRST_NAME','$_GLOBAL_DATE','$_Module_Register_POST_LAST_NAME','$_Module_Register_POST_EMAIL_ADDRESS','$_Module_Register_POST_MEMBER_ID','1','$_Module_Register_POST_PASSWORD','0','None','0','0','$_Module_Register_RANDOM_KEY_MD5')");
+/*
+ ===========================
+ +
+ + Insert Registrar SQL Data
+ +
+ ===========================
+*/
+
+$_Module_Register_DB_Query_INSERT_REGISTRAR			= $DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_members(member_access_level,member_avatar,member_banned_status,member_city,member_experience_amount,member_first_name,member_join_date,member_last_name,member_email_address,member_username,member_newsletter,member_password,member_number_of_posts,member_signature,member_sound,member_t_logged,member_t_random)VALUES('1','Default.$_GLOBAL_IMAGE_EXTENSION','0','Unknown','0','$_Module_Register_POST_FIRST_NAME','$_GLOBAL_DATE','$_Module_Register_POST_LAST_NAME','$_Module_Register_POST_EMAIL_ADDRESS','$_Module_Register_POST_MEMBER_ID','1','$_Module_Register_POST_PASSWORD','0','None','0','0','$_Module_Register_RANDOM_KEY_MD5')");
+
+/*
+ ===========================
+ + If DB Query Insert Registrar
+ ===========================
+*/
 
 if ($_Module_Register_DB_Query_INSERT_REGISTRAR) {
 
@@ -308,7 +327,7 @@ if ($_Module_Register_DB_Query_INSERT_REGISTRAR) {
 											mkdir("Member/$_Module_Register_POST_MEMBER_ID/Friend");
 											copy("System/Default/Register/Register.html","Member/$_Module_Register_POST_MEMBER_ID/index.html");
 
-} else {
+} else { // [ + ] [ 8 ] IF DB QUERY INSERT REGISTRAR
 											echo ($_Message_Register_REGISTRATION_ERROR);
 } // [ + ] IF_DB_Query_INSERT
 
@@ -320,11 +339,11 @@ if ($_Module_Register_DB_Query_INSERT_REGISTRAR) {
 
 $DB->free($_Module_Register_DB_Query_INSERT_REGISTRAR);
 
-} else {
+} else { // [ + ] [ 9 ] IF MEMBER EXISTS
 											echo ($_Message_Register_REGISTRATION_MEMBER_EXISTS);
 } // [ + ] CHECK_ROW
 
-} else {
+//} else {
 											echo ($_Message_Register_REGISTRATION_MEMBER_EXISTS);
 } // [ + ] CHECK_ROW
 
@@ -338,5 +357,5 @@ $DB->free($_Module_Register_DB_Query_INSERT_REGISTRAR);
 
 } // [ + ] IF_!POST_FORM
 
-} // [ + ] IF_COOKIE
+//} // [ + ] IF_COOKIE
 ?>

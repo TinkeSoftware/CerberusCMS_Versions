@@ -115,7 +115,7 @@ fclose($_Module_Webspace_OPEN_MEMBER_INDEX_FILE);
 
 } else {
 
-$_Module_Webspace_SPECIFY_MEMBER_INDEX_FOR_WRITE	= fopen("Member/$_GLOBAL_USERNAME/index.html", "w");
+$_Module_Webspace_SPECIFY_MEMBER_INDEX_FOR_WRITE		= fopen("Member/$_GLOBAL_USERNAME/index.html", "w");
 
 if (fwrite($_Module_Webspace_SPECIFY_MEMBER_INDEX_FOR_WRITE, $_Module_Webspace_POST_WEBSPACE_DATA)) {
 
