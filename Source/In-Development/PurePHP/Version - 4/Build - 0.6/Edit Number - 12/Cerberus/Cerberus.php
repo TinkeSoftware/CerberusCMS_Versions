@@ -102,7 +102,7 @@ $DB										= new DB();
  ===========================
 */
 
-$_CERBERUS_DATABASE_CONNECTION 							= mysql_connect($_ACCESS_DATABASE_HOSTNAME, $_ACCESS_DATABASE_USERNAME, $_ACCESS_DATABASE_PASSWORD);
+$_CERBERUS_DATABASE_CONNECTION 							= new mysqli($_ACCESS_DATABASE_HOSTNAME, $_ACCESS_DATABASE_USERNAME, $_ACCESS_DATABASE_PASSWORD);
 $_CERBERUS_DATABASE_NAME_SELECTION 						= mysql_select_db($_ACCESS_DATABASE_NAME);
 
 if ($_CERBERUS_DATABASE_CONNECTION) {
@@ -1037,7 +1037,7 @@ echo ("
 <!--        DOCUMENT TYPE        -->
 <!--=============================-->
 
-<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 5.1 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 
 <!--==============================-->
 <!--        START DOCUMENT        -->

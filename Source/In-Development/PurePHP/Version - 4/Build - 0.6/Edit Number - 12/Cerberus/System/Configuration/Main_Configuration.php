@@ -82,7 +82,7 @@ if (file_exists($_CLASS_DATABASE)) {
 */
 
 $_INTERNAL_USER_MODULE			= "Application";
-$_INTERNAL_ADMINISTRATOR_MODULE	= "adminApplication";
+$_INTERNAL_ADMINISTRATOR_MODULE		= "adminApplication";
 $_INTERNAL_CUSTOM_MODULE		= "customApplication";
 
 /*
@@ -96,6 +96,6 @@ $_INTERNAL_CUSTOM_MODULE		= "customApplication";
 */
 
 $_CERBERUS_FULL_VERSION			= "Cerberus Content Management System - Version: 4, Build: 0.6 ~ Wyn-Ghost - Sunday, March, 24, 2019";
-$_CERBERUS_VERSION				= "4.0.6";
+$_CERBERUS_VERSION			= "4.0.6";
 $_TINKESOFTWARE_SERVER			= "http://CerberusCMS.SourceForge.net";
 ?>

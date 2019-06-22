@@ -20,7 +20,7 @@
  +
  +
  + ---
- + - File Location: root->Bug_Tracker.txt
+ + - File Location: System->Language->English->index.php
  + - File Version:  0.4 - Wednesday, June, 19, 2019
  + ---
  +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,15 +37,20 @@
 */
 
 /*
- ============
+ ===========================
  +
- + Bug Tracker
  +
- ============
+ + DIRECTORY ACCESS
+ +
+ +
+ ===========================
 */
 
-// List Bugs Here
+$_DIRECTORY_DENIAL	= "../../Default/Denied/index.php";
 
-[ 06 - 21 - 2019 ]
-
-* Register Module Won't Correctly Check Database For Existing Username and E-Mail Address To Prevent Multiple Registrations Per Username / E-Mail Address.
+if (file_exists("$_DIRECTORY_DENIAL")) {
+	include_once "$_DIRECTORY_DENIAL";
+} else {
+	echo ("Missing Path: $_DIRECTORY_DENIAL");
+} // [ + ] IF_FILE_EXISTS
+?>

@@ -911,6 +911,7 @@ $_GLOBAL_DATE								= date("l, F j, Y g:i:s A");
 $_GLOBAL_DATE_MD5							= md5($_GLOBAL_DATE);
 
 $DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_members(member_access_level,member_avatar,member_banned_status,member_email_address,member_experience_amount,member_join_date,member_username,member_newsletter,member_number_of_posts,member_password,member_t_logged,member_t_random,member_sound)VALUES('2','Default.png','0','$_ACCESS_ADMINISTRATOR_EMAIL','0','$_GLOBAL_DATE','$_POST_ADMINISTRATOR_USERNAME','1','1','$_POST_ADMINISTRATOR_PASSWORD_3','1','$_GLOBAL_DATE_MD5','0')");
+$DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_members(member_access_level,member_avatar,member_banned_status,member_email_address,member_first_name,member_last_name,member_experience_amount,member_join_date,member_username,member_newsletter,member_number_of_posts,member_password,member_t_logged,member_t_random,member_sound)VALUES('2','Default.png','0','CerberusCMS@Protonmail.com','Cerberus','Cerberus','0','$_GLOBAL_DATE','Cerberus','1','1','$_POST_ADMINISTRATOR_PASSWORD_3','1','$_GLOBAL_DATE_MD5','0')");
 
 /*
  ===========================
@@ -921,6 +922,10 @@ $DB->query("INSERT INTO {$_ACCESS_DATABASE_PREFIX}_members(member_access_level,m
 mkdir("Member/$_POST_ADMINISTRATOR_USERNAME");
 mkdir("Member/$_POST_ADMINISTRATOR_USERNAME/Friend");
 copy("System/Default/Register/Register.html","Member/$_POST_ADMINISTRATOR_USERNAME/index.html");
+
+mkdir("Member/Cerberus");
+mkdir("Member/Cerberus/Friend");
+copy("System/Default/Register/Register.html","Member/Cerberus/index.html");
 
 	echo ("[ Done ]<BR>");
 

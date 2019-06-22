@@ -125,20 +125,20 @@ $_GLOBAL_SAFEHTML_CODE_REPLACE[14]	 				= "</BIG>";
  ===========================
 */
 
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[0]	 				= "<IMG SRC=\"System/Smiley/default/angry.gif\" TITLE=\":: Angry ::\" ALT=\":: Angry ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[1]	 				= "<IMG SRC=\"System/Smiley/default/birdy.gif\" TITLE=\":: Birdy ::\" ALT=\":: Birdy ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[2]	 				= "<IMG SRC=\"System/Smiley/default/confused.gif\" TITLE=\":: Confused ::\" ALT=\":: Confused ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[3]	 				= "<IMG SRC=\"System/Smiley/default/cry.gif\" TITLE=\":: Crying ::\" ALT=\":: Crying ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[4]	 				= "<IMG SRC=\"System/Smiley/default/kiss.gif\" TITLE=\":: Kiss ::\" ALT=\":: Kiss ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[5]	 				= "<IMG SRC=\"System/Smiley/default/drool.gif\" TITLE=\":: Drool ::\" ALT=\":: Drool ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[6]	 				= "<IMG SRC=\"System/Smiley/default/nervous.gif\" TITLE=\":: Nervous ::\" ALT=\":: Nervous ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[7]	 				= "<IMG SRC=\"System/Smiley/default/peace.gif\" TITLE=\":: Peace ::\" ALT=\":: Peace ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[8]	 				= "<IMG SRC=\"System/Smiley/default/sleeping.gif\" TITLE=\":: Sleeping ::\" ALT=\":: Sleeping ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[9]	 				= "<IMG SRC=\"System/Smiley/default/smile.gif\" TITLE=\":: Smiling ::\" ALT=\":: Smiling ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[10]	 				= "<IMG SRC=\"System/Smiley/default/turd.gif\" TITLE=\":: Turd ::\" ALT=\":: Turd ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[11]	 				= "<IMG SRC=\"System/Smiley/default/weird.gif\" TITLE=\":: Weird ::\" ALT=\":: Weird ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[12]	 				= "<IMG SRC=\"System/Smiley/default/devil.jpg\" TITLE=\":: Devil ::\" ALT=\":: Devil ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[13]	 				= "<IMG SRC=\"System/Smiley/default/scream.jpg\" TITLE=\":: Screaming ::\" ALT=\":: Screaming ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[0]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/angry.gif\" TITLE=\":: Angry ::\" ALT=\":: Angry ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[1]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/birdy.gif\" TITLE=\":: Birdy ::\" ALT=\":: Birdy ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[2]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/confused.gif\" TITLE=\":: Confused ::\" ALT=\":: Confused ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[3]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/cry.gif\" TITLE=\":: Crying ::\" ALT=\":: Crying ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[4]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/kiss.gif\" TITLE=\":: Kiss ::\" ALT=\":: Kiss ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[5]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/drool.gif\" TITLE=\":: Drool ::\" ALT=\":: Drool ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[6]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/nervous.gif\" TITLE=\":: Nervous ::\" ALT=\":: Nervous ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[7]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/peace.gif\" TITLE=\":: Peace ::\" ALT=\":: Peace ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[8]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/sleeping.gif\" TITLE=\":: Sleeping ::\" ALT=\":: Sleeping ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[9]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/smile.gif\" TITLE=\":: Smiling ::\" ALT=\":: Smiling ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[10]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/turd.gif\" TITLE=\":: Turd ::\" ALT=\":: Turd ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[11]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/weird.gif\" TITLE=\":: Weird ::\" ALT=\":: Weird ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[12]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/devil.jpg\" TITLE=\":: Devil ::\" ALT=\":: Devil ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_REPLACE[13]	 				= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/scream.jpg\" TITLE=\":: Screaming ::\" ALT=\":: Screaming ::\">";
 
 /*
  ===========================
@@ -198,20 +198,20 @@ $_GLOBAL_SAFEHTML_CODE_BACK_REPLACE[14]					= "[/big]";
  ===========================
 */
 
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[0]					= "<IMG SRC=\"System/Smiley/default/angry.gif\" TITLE=\":: Angry ::\" ALT=\":: Angry ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[1]					= "<IMG SRC=\"System/Smiley/default/birdy.gif\" TITLE=\":: Birdy ::\" ALT=\":: Birdy ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[2]					= "<IMG SRC=\"System/Smiley/default/confused.gif\" TITLE=\":: Confused ::\" ALT=\":: Confused ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[3]					= "<IMG SRC=\"System/Smiley/default/cry.gif\" TITLE=\":: Crying ::\" ALT=\":: Crying ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[4]					= "<IMG SRC=\"System/Smiley/default/kiss.gif\" TITLE=\":: Kiss ::\" ALT=\":: Kiss ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[5]					= "<IMG SRC=\"System/Smiley/default/drool.gif\" TITLE=\":: Drool ::\" ALT=\":: Drool ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[6]					= "<IMG SRC=\"System/Smiley/default/nervous.gif\" TITLE=\":: Nervous ::\" ALT=\":: Nervous ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[7]					= "<IMG SRC=\"System/Smiley/default/peace.gif\" TITLE=\":: Peace ::\" ALT=\":: Peace ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[8]					= "<IMG SRC=\"System/Smiley/default/sleeping.gif\" TITLE=\":: Sleeping ::\" ALT=\":: Sleeping ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[9]					= "<IMG SRC=\"System/Smiley/default/smile.gif\" TITLE=\":: Smiling ::\" ALT=\":: Smiling ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[10]					= "<IMG SRC=\"System/Smiley/default/turd.gif\" TITLE=\":: Turd ::\" ALT=\":: Turd ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[11]					= "<IMG SRC=\"System/Smiley/default/weird.gif\" TITLE=\":: Weird ::\" ALT=\":: Weird ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[12]					= "<IMG SRC=\"System/Smiley/default/devil.jpg\" TITLE=\":: Devil ::\" ALT=\":: Devil ::\">";
-$_GLOBAL_SAFEHTML_SMILEYS_BACK[13]					= "<IMG SRC=\"System/Smiley/default/scream.jpg\" TITLE=\":: Screaming ::\" ALT=\":: Screaming ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[0]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/angry.gif\" TITLE=\":: Angry ::\" ALT=\":: Angry ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[1]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/birdy.gif\" TITLE=\":: Birdy ::\" ALT=\":: Birdy ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[2]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/confused.gif\" TITLE=\":: Confused ::\" ALT=\":: Confused ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[3]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/cry.gif\" TITLE=\":: Crying ::\" ALT=\":: Crying ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[4]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/kiss.gif\" TITLE=\":: Kiss ::\" ALT=\":: Kiss ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[5]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/drool.gif\" TITLE=\":: Drool ::\" ALT=\":: Drool ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[6]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/nervous.gif\" TITLE=\":: Nervous ::\" ALT=\":: Nervous ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[7]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/peace.gif\" TITLE=\":: Peace ::\" ALT=\":: Peace ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[8]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/sleeping.gif\" TITLE=\":: Sleeping ::\" ALT=\":: Sleeping ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[9]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/smile.gif\" TITLE=\":: Smiling ::\" ALT=\":: Smiling ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[10]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/turd.gif\" TITLE=\":: Turd ::\" ALT=\":: Turd ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[11]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/weird.gif\" TITLE=\":: Weird ::\" ALT=\":: Weird ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[12]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/devil.jpg\" TITLE=\":: Devil ::\" ALT=\":: Devil ::\">";
+$_GLOBAL_SAFEHTML_SMILEYS_BACK[13]					= "<IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/scream.jpg\" TITLE=\":: Screaming ::\" ALT=\":: Screaming ::\">";
 
 /*
  ===========================
@@ -245,7 +245,7 @@ $_LIST_SAFEHTML_COMMANDS						= "<B>Bold Text</B>:<BR>[b], [/b]<BR><BR><B><U>Und
  							 		<BR><BR><B>Smiley Faces</B>:<BR>[angry], [birdy], [confused], [cry], [kiss], [drool], [nervous], [peace], [sleeping], [smile], [turd], [weird], [devil], [scream]
  							 		<BR><BR>Usage of the previous tags in your post will insert H.T.M.L. code into the S.Q.L. database along with your post.<BR><BR><B>Example</B>:<BR>
  							 		This [u]file[/u] is [b]awesome[/b]! [smile] [link]click here![/link]<BR><BR><B>Would output</B>:<BR>
- 							 		This <U>file</U> is <B>awesome</B>! <IMG SRC=\"System/Smiley/default/smile.gif\" TITLE=\":: Smiling ::\" ALT=\":: Smiling ::\"> <A>click here!</A><BR><BR>
+ 							 		This <U>file</U> is <B>awesome</B>! <IMG SRC=\"System/Smiley/$_GLOBAL_SAFEHTML_DIRECTORY/smile.gif\" TITLE=\":: Smiling ::\" ALT=\":: Smiling ::\"> <A>click here!</A><BR><BR>
  							 		You can use any of the previous tags in your post.";
 
 /*
